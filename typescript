@@ -1,0 +1,1223 @@
+Script started on 2023-01-19 16:40:55-04:00 [TERM="xterm-256color" TTY="/dev/pts/8" COLUMNS="196" LINES="18"]
+]0;grigerlord@DESKTOP-HJU0HTT: ~/cesticom/bootcamp/condominium/api[01;32mgrigerlord@DESKTOP-HJU0HTT[00m:[01;34m~/cesticom/bootcamp/condominium/api[00m$ help
+GNU bash, version 5.0.17(1)-release (x86_64-pc-linux-gnu)
+These shell commands are defined internally.  Type `help' to see this list.
+Type `help name' to find out more about the function `name'.
+Use `info bash' to find out more about the shell in general.
+Use `man -k' or `info' to find out more about commands not in this list.
+
+A star (*) next to a name means that the command is disabled.
+
+ job_spec [&]                                                                                      history [-c] [-d offset] [n] or history -anrw [filename] or history -ps arg [arg...]
+ (( expression ))                                                                                  if COMMANDS; then COMMANDS; [ elif COMMANDS; then COMMANDS; ]... [ else COMMANDS; ] fi
+ . filename [arguments]                                                                            jobs [-lnprs] [jobspec ...] or jobs -x command [args]
+ :                                                                                                 kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+ [ arg... ]                                                                                        let arg [arg ...]
+ [[ expression ]]                                                                                  local [option] name[=value] ...
+ alias [-p] [name[=value] ... ]                                                                    logout [n]
+ bg [job_spec ...]                                                                                 mapfile [-d delim] [-n count] [-O origin] [-s count] [-t] [-u fd] [-C callback] [-c quantum] [>
+ bind [-lpsvPSVX] [-m keymap] [-f filename] [-q name] [-u name] [-r keyseq] [-x keyseq:shell-com>  popd [-n] [+N | -N]
+ break [n]                                                                                         printf [-v var] format [arguments]
+ builtin [shell-builtin [arg ...]]                                                                 pushd [-n] [+N | -N | dir]
+ caller [expr]                                                                                     pwd [-LP]
+ case WORD in [PATTERN [| PATTERN]...) COMMANDS ;;]... esac                                        read [-ers] [-a array] [-d delim] [-i text] [-n nchars] [-N nchars] [-p prompt] [-t timeout] [>
+ cd [-L|[-P [-e]] [-@]] [dir]                                                                      readarray [-d delim] [-n count] [-O origin] [-s count] [-t] [-u fd] [-C callback] [-c quantum]>
+ command [-pVv] command [arg ...]                                                                  readonly [-aAf] [name[=value] ...] or readonly -p
+ compgen [-abcdefgjksuv] [-o option] [-A action] [-G globpat] [-W wordlist]  [-F function] [-C c>  return [n]
+ complete [-abcdefgjksuv] [-pr] [-DEI] [-o option] [-A action] [-G globpat] [-W wordlist]  [-F f>  select NAME [in WORDS ... ;] do COMMANDS; done
+ compopt [-o|+o option] [-DEI] [name ...]                                                          set [-abefhkmnptuvxBCHP] [-o option-name] [--] [arg ...]
+ continue [n]                                                                                      shift [n]
+ coproc [NAME] command [redirections]                                                              shopt [-pqsu] [-o] [optname ...]
+ declare [-aAfFgilnrtux] [-p] [name[=value] ...]                                                   source filename [arguments]
+ dirs [-clpv] [+N] [-N]                                                                            suspend [-f]
+ disown [-h] [-ar] [jobspec ... | pid ...]                                                         test [expr]
+ echo [-neE] [arg ...]                                                                             time [-p] pipeline
+ enable [-a] [-dnps] [-f filename] [name ...]                                                      times
+ eval [arg ...]                                                                                    trap [-lp] [[arg] signal_spec ...]
+ exec [-cl] [-a name] [command [arguments ...]] [redirection ...]                                  true
+ exit [n]                                                                                          type [-afptP] name [name ...]
+ export [-fn] [name[=value] ...] or export -p                                                      typeset [-aAfFgilnrtux] [-p] name[=value] ...
+ false                                                                                             ulimit [-SHabcdefiklmnpqrstuvxPT] [limit]
+ fc [-e ename] [-lnr] [first] [last] or fc -s [pat=rep] [command]                                  umask [-p] [-S] [mode]
+ fg [job_spec]                                                                                     unalias [-a] name [name ...]
+ for NAME [in WORDS ... ] ; do COMMANDS; done                                                      unset [-f] [-v] [-n] [name ...]
+ for (( exp1; exp2; exp3 )); do COMMANDS; done                                                     until COMMANDS; do COMMANDS; done
+ function name { COMMANDS ; } or name () { COMMANDS ; }                                            variables - Names and meanings of some shell variables
+ getopts optstring name [arg]                                                                      wait [-fn] [id ...]
+ hash [-lr] [-p pathname] [-dt] [name ...]                                                         while COMMANDS; do COMMANDS; done
+ help [-dms] [pattern ...]                                                                         { COMMANDS ; }
+]0;grigerlord@DESKTOP-HJU0HTT: ~/cesticom/bootcamp/condominium/api[01;32mgrigerlord@DESKTOP-HJU0HTT[00m:[01;34m~/cesticom/bootcamp/condominium/api[00m$ clear
+[H[2J[3J]0;grigerlord@DESKTOP-HJU0HTT: ~/cesticom/bootcamp/condominium/api[01;32mgrigerlord@DESKTOP-HJU0HTT[00m:[01;34m~/cesticom/bootcamp/condominium/api[00m$ npm run eslint:fix
+
+> api@1.0.0 eslint:fix
+> npx eslint src/**/*.js --fix --ignore-pattern "node_modules/"
+
+[0m[0m
+[0m[4m/home/grigerlord/cesticom/bootcamp/condominium/api/src/models/users.js[24m[0m
+[0m  [2m37:38[22m  [31merror[39m  Irregular whitespace not allowed  [2mno-irregular-whitespace[22m[0m
+[0m  [2m37:41[22m  [31merror[39m  Irregular whitespace not allowed  [2mno-irregular-whitespace[22m[0m
+[0m[0m
+[0m[31m[1m✖ 2 problems (2 errors, 0 warnings)[22m[39m[0m
+[0m[31m[1m[22m[39m[0m
+]0;grigerlord@DESKTOP-HJU0HTT: ~/cesticom/bootcamp/condominium/api[01;32mgrigerlord@DESKTOP-HJU0HTT[00m:[01;34m~/cesticom/bootcamp/condominium/api[00m$ npm run eslint:fix
+
+> api@1.0.0 eslint:fix
+> npx eslint src/**/*.js --fix --ignore-pattern "node_modules/"
+
+]0;grigerlord@DESKTOP-HJU0HTT: ~/cesticom/bootcamp/condominium/api[01;32mgrigerlord@DESKTOP-HJU0HTT[00m:[01;34m~/cesticom/bootcamp/condominium/api[00m$ npm run start:dev
+
+> api@1.0.0 start:dev
+> npm run eslint && nodemon src/index.js --exec babel-node
+
+
+> api@1.0.0 eslint
+> npx eslint src/**/*.js --ignore-pattern "node_modules/"
+
+[33m[nodemon] 2.0.20[39m
+[33m[nodemon] reading config ./nodemon.json[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] or send SIGHUP to 4471 to restart[39m
+[33m[nodemon] ignoring: *.test.js fixtures/**/* uploads/**/* scripts/**/* public/**/* templates/**/* *.json[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `babel-node src/index.js`[39m
+[33m[nodemon] spawning[39m
+[33m[nodemon] child pid: 4484[39m
+[33m[nodemon] watching 25 files[39m
+app listening on port 9000
+Connected successfully to the database
+[33m[nodemon] files triggering change check: src/models/users.js[39m
+[33m[nodemon] matched rule: **/*.*[39m
+[33m[nodemon] changes after filters (before/after): 1/1[39m
+[32m[nodemon] restarting due to changes...[39m
+[33m[nodemon] src/models/users.js[39m
+
+[33m[nodemon] files triggering change check: typescript[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[32m[nodemon] starting `babel-node src/index.js`[39m
+[33m[nodemon] spawning[39m
+[33m[nodemon] child pid: 5469[39m
+app listening on port 9000
+Connected successfully to the database
+^C[33m[nodemon] exiting[39m
+
+]0;grigerlord@DESKTOP-HJU0HTT: ~/cesticom/bootcamp/condominium/api[01;32mgrigerlord@DESKTOP-HJU0HTT[00m:[01;34m~/cesticom/bootcamp/condominium/api[00m$ npm run start
+
+> api@1.0.0 start
+> babel-node src/index.js
+
+app listening on port 9000
+Connected successfully to the database
+{
+  firstName: { type: [32m'String'[39m, default: [32m'Griger'[39m },
+  lastName: { type: [32m'String'[39m, default: [32m'Ratia'[39m },
+  cedula: { type: [32m'Number'[39m, default: [32m'23684995'[39m },
+  phone: { type: [32m'String'[39m, default: [32m'+584161913347'[39m },
+  deleted: { type: [32m'Boolean'[39m, default: [33mfalse[39m },
+  adsress: { street: [32m'123 street'[39m, city: [32m'Cumana'[39m, state: [32m'Su.'[39m, zip: [32m'12345'[39m },
+  userType: { type: [32m'String'[39m, default: [32m'userTemp'[39m },
+  userName: { type: [32m'String'[39m, default: [32m'grigerluis'[39m },
+  email: { type: [32m'String'[39m, default: [32m'grigerratia@gmail.com'[39m },
+  password: { type: [32m'String'[39m, default: [32m'123abd#'[39m },
+  createdAt: { type: [32m'String'[39m, default: [32m''[39m },
+  updatedAt: { type: [32m'String'[39m, default: [32m''[39m }
+}
+/home/grigerlord/cesticom/bootcamp/condominium/api/node_modules/mongoose/lib/document.js:3123
+    this.$__.validationError = new ValidationError(this);
+                               ^
+
+ValidationError: users validation failed: firstName: Cast to string failed for value "{ type: 'String', default: 'Griger' }" (type Object) at path "firstName", lastName: Cast to string failed for value "{ type: 'String', default: 'Ratia' }" (type Object) at path "lastName", phone: Cast to string failed for value "{ type: 'String', default: '+584161913347' }" (type Object) at path "phone", userType: Cast to string failed for value "{ type: 'String', default: 'userTemp' }" (type Object) at path "userType", userName: Cast to string failed for value "{ type: 'String', default: 'grigerluis' }" (type Object) at path "userName", email: Cast to string failed for value "{ type: 'String', default: 'grigerratia@gmail.com' }" (type Object) at path "email", password: Cast to string failed for value "{ type: 'String', default: '123abd#' }" (type Object) at path "password"
+    at model.Document.invalidate [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:3123:32[90m)[39m
+    at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1463:12[90m)[39m
+    at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+    at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+    at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+    at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+    at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+    at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+    at Array.forEach (<anonymous>)
+    at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3231:15 {
+  errors: {
+    firstName: CastError: Cast to string failed for value "{ type: 'String', default: 'Griger' }" (type Object) at path "firstName"
+        at SchemaString.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/string.js:603:11[90m)[39m
+        at SchemaString.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>) {
+      stringValue: [32m`"{ type: 'String', default: 'Griger' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'string'[39m,
+      value: { type: [32m'String'[39m, default: [32m'Griger'[39m },
+      path: [32m'firstName'[39m,
+      reason: [1mnull[22m,
+      valueType: [32m'Object'[39m
+    },
+    lastName: CastError: Cast to string failed for value "{ type: 'String', default: 'Ratia' }" (type Object) at path "lastName"
+        at SchemaString.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/string.js:603:11[90m)[39m
+        at SchemaString.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>) {
+      stringValue: [32m`"{ type: 'String', default: 'Ratia' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'string'[39m,
+      value: { type: [32m'String'[39m, default: [32m'Ratia'[39m },
+      path: [32m'lastName'[39m,
+      reason: [1mnull[22m,
+      valueType: [32m'Object'[39m
+    },
+    phone: CastError: Cast to string failed for value "{ type: 'String', default: '+584161913347' }" (type Object) at path "phone"
+        at SchemaString.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/string.js:603:11[90m)[39m
+        at SchemaString.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>) {
+      stringValue: [32m`"{ type: 'String', default: '+584161913347' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'string'[39m,
+      value: { type: [32m'String'[39m, default: [32m'+584161913347'[39m },
+      path: [32m'phone'[39m,
+      reason: [1mnull[22m,
+      valueType: [32m'Object'[39m
+    },
+    userType: CastError: Cast to string failed for value "{ type: 'String', default: 'userTemp' }" (type Object) at path "userType"
+        at SchemaString.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/string.js:603:11[90m)[39m
+        at SchemaString.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>) {
+      stringValue: [32m`"{ type: 'String', default: 'userTemp' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'string'[39m,
+      value: { type: [32m'String'[39m, default: [32m'userTemp'[39m },
+      path: [32m'userType'[39m,
+      reason: [1mnull[22m,
+      valueType: [32m'Object'[39m
+    },
+    userName: CastError: Cast to string failed for value "{ type: 'String', default: 'grigerluis' }" (type Object) at path "userName"
+        at SchemaString.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/string.js:603:11[90m)[39m
+        at SchemaString.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>) {
+      stringValue: [32m`"{ type: 'String', default: 'grigerluis' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'string'[39m,
+      value: { type: [32m'String'[39m, default: [32m'grigerluis'[39m },
+      path: [32m'userName'[39m,
+      reason: [1mnull[22m,
+      valueType: [32m'Object'[39m
+    },
+    email: CastError: Cast to string failed for value "{ type: 'String', default: 'grigerratia@gmail.com' }" (type Object) at path "email"
+        at SchemaString.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/string.js:603:11[90m)[39m
+        at SchemaString.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>) {
+      stringValue: [32m`"{ type: 'String', default: 'grigerratia@gmail.com' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'string'[39m,
+      value: { type: [32m'String'[39m, default: [32m'grigerratia@gmail.com'[39m },
+      path: [32m'email'[39m,
+      reason: [1mnull[22m,
+      valueType: [32m'Object'[39m
+    },
+    password: CastError: Cast to string failed for value "{ type: 'String', default: '123abd#' }" (type Object) at path "password"
+        at SchemaString.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/string.js:603:11[90m)[39m
+        at SchemaString.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>) {
+      stringValue: [32m`"{ type: 'String', default: '123abd#' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'string'[39m,
+      value: { type: [32m'String'[39m, default: [32m'123abd#'[39m },
+      path: [32m'password'[39m,
+      reason: [1mnull[22m,
+      valueType: [32m'Object'[39m
+    }
+  },
+  _message: [32m'users validation failed'[39m
+}
+]0;grigerlord@DESKTOP-HJU0HTT: ~/cesticom/bootcamp/condominium/api[01;32mgrigerlord@DESKTOP-HJU0HTT[00m:[01;34m~/cesticom/bootcamp/condominium/api[00m$ npm run start
+
+> api@1.0.0 start
+> babel-node src/index.js
+
+app listening on port 9000
+Connected successfully to the database
+{
+  firstName: { type: [32m'String'[39m, default: [32m'Griger'[39m },
+  lastName: { type: [32m'String'[39m, default: [32m'Ratia'[39m },
+  cedula: { type: [32m'Number'[39m, default: [32m'23684995'[39m },
+  phone: { type: [32m'String'[39m, default: [32m'+584161913347'[39m },
+  deleted: { type: [32m'Boolean'[39m, default: [33mfalse[39m },
+  adsress: { street: [32m'123 street'[39m, city: [32m'Cumana'[39m, state: [32m'Su.'[39m, zip: [32m'12345'[39m },
+  userType: { type: [32m'String'[39m, default: [32m'userTemp'[39m },
+  userName: { type: [32m'String'[39m, default: [32m'grigerluis'[39m },
+  email: { type: [32m'String'[39m, default: [32m'grigerratia@gmail.com'[39m },
+  password: { type: [32m'String'[39m, default: [32m''[39m },
+  createdAt: { type: [32m'String'[39m, default: [32m''[39m },
+  updatedAt: { type: [32m'String'[39m, default: [32m''[39m }
+}
+/home/grigerlord/cesticom/bootcamp/condominium/api/node_modules/mongoose/lib/document.js:3123
+    this.$__.validationError = new ValidationError(this);
+                               ^
+
+ValidationError: users validation failed: firstName: Cast to string failed for value "{ type: 'String', default: 'Griger' }" (type Object) at path "firstName", lastName: Cast to string failed for value "{ type: 'String', default: 'Ratia' }" (type Object) at path "lastName", phone: Cast to string failed for value "{ type: 'String', default: '+584161913347' }" (type Object) at path "phone", userType: Cast to string failed for value "{ type: 'String', default: 'userTemp' }" (type Object) at path "userType", userName: Cast to string failed for value "{ type: 'String', default: 'grigerluis' }" (type Object) at path "userName", email: Cast to string failed for value "{ type: 'String', default: 'grigerratia@gmail.com' }" (type Object) at path "email", password: Cast to string failed for value "{ type: 'String', default: '' }" (type Object) at path "password"
+    at model.Document.invalidate [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:3123:32[90m)[39m
+    at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1463:12[90m)[39m
+    at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+    at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+    at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+    at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+    at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+    at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+    at Array.forEach (<anonymous>)
+    at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3231:15 {
+  errors: {
+    firstName: CastError: Cast to string failed for value "{ type: 'String', default: 'Griger' }" (type Object) at path "firstName"
+        at SchemaString.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/string.js:603:11[90m)[39m
+        at SchemaString.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>) {
+      stringValue: [32m`"{ type: 'String', default: 'Griger' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'string'[39m,
+      value: { type: [32m'String'[39m, default: [32m'Griger'[39m },
+      path: [32m'firstName'[39m,
+      reason: [1mnull[22m,
+      valueType: [32m'Object'[39m
+    },
+    lastName: CastError: Cast to string failed for value "{ type: 'String', default: 'Ratia' }" (type Object) at path "lastName"
+        at SchemaString.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/string.js:603:11[90m)[39m
+        at SchemaString.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>) {
+      stringValue: [32m`"{ type: 'String', default: 'Ratia' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'string'[39m,
+      value: { type: [32m'String'[39m, default: [32m'Ratia'[39m },
+      path: [32m'lastName'[39m,
+      reason: [1mnull[22m,
+      valueType: [32m'Object'[39m
+    },
+    phone: CastError: Cast to string failed for value "{ type: 'String', default: '+584161913347' }" (type Object) at path "phone"
+        at SchemaString.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/string.js:603:11[90m)[39m
+        at SchemaString.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>) {
+      stringValue: [32m`"{ type: 'String', default: '+584161913347' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'string'[39m,
+      value: { type: [32m'String'[39m, default: [32m'+584161913347'[39m },
+      path: [32m'phone'[39m,
+      reason: [1mnull[22m,
+      valueType: [32m'Object'[39m
+    },
+    userType: CastError: Cast to string failed for value "{ type: 'String', default: 'userTemp' }" (type Object) at path "userType"
+        at SchemaString.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/string.js:603:11[90m)[39m
+        at SchemaString.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>) {
+      stringValue: [32m`"{ type: 'String', default: 'userTemp' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'string'[39m,
+      value: { type: [32m'String'[39m, default: [32m'userTemp'[39m },
+      path: [32m'userType'[39m,
+      reason: [1mnull[22m,
+      valueType: [32m'Object'[39m
+    },
+    userName: CastError: Cast to string failed for value "{ type: 'String', default: 'grigerluis' }" (type Object) at path "userName"
+        at SchemaString.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/string.js:603:11[90m)[39m
+        at SchemaString.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>) {
+      stringValue: [32m`"{ type: 'String', default: 'grigerluis' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'string'[39m,
+      value: { type: [32m'String'[39m, default: [32m'grigerluis'[39m },
+      path: [32m'userName'[39m,
+      reason: [1mnull[22m,
+      valueType: [32m'Object'[39m
+    },
+    email: CastError: Cast to string failed for value "{ type: 'String', default: 'grigerratia@gmail.com' }" (type Object) at path "email"
+        at SchemaString.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/string.js:603:11[90m)[39m
+        at SchemaString.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>) {
+      stringValue: [32m`"{ type: 'String', default: 'grigerratia@gmail.com' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'string'[39m,
+      value: { type: [32m'String'[39m, default: [32m'grigerratia@gmail.com'[39m },
+      path: [32m'email'[39m,
+      reason: [1mnull[22m,
+      valueType: [32m'Object'[39m
+    },
+    password: CastError: Cast to string failed for value "{ type: 'String', default: '' }" (type Object) at path "password"
+        at SchemaString.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/string.js:603:11[90m)[39m
+        at SchemaString.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>) {
+      stringValue: [32m`"{ type: 'String', default: '' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'string'[39m,
+      value: { type: [32m'String'[39m, default: [32m''[39m },
+      path: [32m'password'[39m,
+      reason: [1mnull[22m,
+      valueType: [32m'Object'[39m
+    }
+  },
+  _message: [32m'users validation failed'[39m
+}
+]0;grigerlord@DESKTOP-HJU0HTT: ~/cesticom/bootcamp/condominium/api[01;32mgrigerlord@DESKTOP-HJU0HTT[00m:[01;34m~/cesticom/bootcamp/condominium/api[00m$ [K]0;grigerlord@DESKTOP-HJU0HTT: ~/cesticom/bootcamp/condominium/api[01;32mgrigerlord@DESKTOP-HJU0HTT[00m:[01;34m~/cesticom/bootcamp/condominium/api[00m$ [K]0;grigerlord@DESKTOP-HJU0HTT: ~/cesticom/bootcamp/condominium/api[01;32mgrigerlord@DESKTOP-HJU0HTT[00m:[01;34m~/cesticom/bootcamp/condominium/api[00m$ [K]0;grigerlord@DESKTOP-HJU0HTT: ~/cesticom/bootcamp/condominium/api[01;32mgrigerlord@DESKTOP-HJU0HTT[00m:[01;34m~/cesticom/bootcamp/condominium/api[00m$ npm run start:dev
+
+> api@1.0.0 start:dev
+> npm run eslint && nodemon src/index.js --exec babel-node
+
+
+> api@1.0.0 eslint
+> npx eslint src/**/*.js --ignore-pattern "node_modules/"
+
+[0m[0m
+[0m[4m/home/grigerlord/cesticom/bootcamp/condominium/api/src/controllers/users.js[24m[0m
+[0m  [2m20:1[22m  [31merror[39m  Trailing spaces not allowed  [2mno-trailing-spaces[22m[0m
+[0m[0m
+[0m[31m[1m✖ 1 problem (1 error, 0 warnings)[22m[39m[0m
+[0m[31m[1m[22m[39m[31m[1m  1 error and 0 warnings potentially fixable with the `--fix` option.[22m[39m[0m
+[0m[31m[1m[22m[39m[0m
+]0;grigerlord@DESKTOP-HJU0HTT: ~/cesticom/bootcamp/condominium/api[01;32mgrigerlord@DESKTOP-HJU0HTT[00m:[01;34m~/cesticom/bootcamp/condominium/api[00m$ [K]0;grigerlord@DESKTOP-HJU0HTT: ~/cesticom/bootcamp/condominium/api[01;32mgrigerlord@DESKTOP-HJU0HTT[00m:[01;34m~/cesticom/bootcamp/condominium/api[00m$ npm run start:dev
+
+> api@1.0.0 start:dev
+> npm run eslint && nodemon src/index.js --exec babel-node
+
+
+> api@1.0.0 eslint
+> npx eslint src/**/*.js --ignore-pattern "node_modules/"
+
+[33m[nodemon] 2.0.20[39m
+[33m[nodemon] reading config ./nodemon.json[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] or send SIGHUP to 6393 to restart[39m
+[33m[nodemon] ignoring: *.test.js fixtures/**/* uploads/**/* scripts/**/* public/**/* templates/**/* *.json[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `babel-node src/index.js`[39m
+[33m[nodemon] spawning[39m
+[33m[nodemon] child pid: 6406[39m
+[33m[nodemon] watching 25 files[39m
+app listening on port 9000
+Connected successfully to the database
+{
+  firstName: { type: [32m'String'[39m, default: [32m'Griger'[39m },
+  lastName: { type: [32m'String'[39m, default: [32m'Ratia'[39m },
+  cedula: { type: [32m'Number'[39m, default: [32m'23684995'[39m },
+  phone: { type: [32m'String'[39m, default: [32m'+584161913347'[39m },
+  deleted: { type: [32m'Boolean'[39m, default: [33mfalse[39m },
+  adsress: { street: [32m'123 street'[39m, city: [32m'Cumana'[39m, state: [32m'Su.'[39m, zip: [32m'12345'[39m },
+  userType: { type: [32m'String'[39m, default: [32m'userTemp'[39m },
+  userName: { type: [32m'String'[39m, default: [32m'grigerluis'[39m },
+  email: { type: [32m'String'[39m, default: [32m'grigerratia@gmail.com'[39m },
+  password: { type: [32m'String'[39m, default: [32m''[39m }
+}
+[33m[nodemon] files triggering change check: typescript[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+/home/grigerlord/cesticom/bootcamp/condominium/api/node_modules/mongoose/lib/document.js:3123
+    this.$__.validationError = new ValidationError(this);
+                               ^
+
+ValidationError: users validation failed: firstName: Cast to string failed for value "{ type: 'String', default: 'Griger' }" (type Object) at path "firstName", lastName: Cast to string failed for value "{ type: 'String', default: 'Ratia' }" (type Object) at path "lastName", cedula: Cast to Number failed for value "{ type: 'Number', default: '23684995' }" (type Object) at path "cedula", phone: Cast to string failed for value "{ type: 'String', default: '+584161913347' }" (type Object) at path "phone", deleted: Cast to Boolean failed for value "{ type: 'Boolean', default: false }" (type Object) at path "deleted" because of "CastError", userType: Cast to string failed for value "{ type: 'String', default: 'userTemp' }" (type Object) at path "userType", userName: Cast to string failed for value "{ type: 'String', default: 'grigerluis' }" (type Object) at path "userName", email: Cast to string failed for value "{ type: 'String', default: 'grigerratia@gmail.com' }" (type Object) at path "email", password: Cast to string failed for value "{ type: 'String', default: '' }" (type Object) at path "password"
+    at model.Document.invalidate [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:3123:32[90m)[39m
+    at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1463:12[90m)[39m
+    at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+    at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+    at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+    at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+    at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+    at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+    at Array.forEach (<anonymous>)
+    at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3231:15
+    at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:40:10[90m)[39m
+    at Mongoose._promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/index.js:1262:10[90m)[39m
+    at Function.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3162:23[90m)[39m
+    at UsersControllers.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/controllers/users.js:21:37[90m)[39m
+    at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/router.js:50:20
+    at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+    at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:144:13[90m)[39m
+    at Route.dispatch [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:114:3[90m)[39m
+    at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+    at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:284:15
+    at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+    at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+    at Function.handle [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:175:3[90m)[39m
+    at router [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:47:12[90m)[39m
+    at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+    at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+    at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+    at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+    at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+    at urlencodedParser [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/types/urlencoded.js:82:7[90m)[39m
+    at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+    at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+    at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+    at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+    at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+    at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/read.js:137:5
+[90m    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)[39m
+    at invokeCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:231:16[90m)[39m
+    at done [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:220:7[90m)[39m
+    at IncomingMessage.onEnd [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:280:7[90m)[39m
+[90m    at IncomingMessage.emit (node:events:525:35)[39m
+[90m    at IncomingMessage.emit (node:domain:489:12)[39m
+[90m    at endReadableNT (node:internal/streams/readable:1358:12)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m {
+  errors: {
+    firstName: CastError: Cast to string failed for value "{ type: 'String', default: 'Griger' }" (type Object) at path "firstName"
+        at SchemaString.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/string.js:603:11[90m)[39m
+        at SchemaString.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>)
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3231:15
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:41:5
+        at new Promise (<anonymous>)
+        at promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:40:10[90m)[39m
+        at Mongoose._promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/index.js:1262:10[90m)[39m
+        at Function.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3162:23[90m)[39m
+        at UsersControllers.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/controllers/users.js:21:37[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/router.js:50:20
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:144:13[90m)[39m
+        at Route.dispatch [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:114:3[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:284:15
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at Function.handle [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:175:3[90m)[39m
+        at router [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:47:12[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at urlencodedParser [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/types/urlencoded.js:82:7[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/read.js:137:5
+    [90m    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)[39m
+        at invokeCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:231:16[90m)[39m
+        at done [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:220:7[90m)[39m
+        at IncomingMessage.onEnd [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:280:7[90m)[39m
+    [90m    at IncomingMessage.emit (node:events:525:35)[39m
+    [90m    at IncomingMessage.emit (node:domain:489:12)[39m
+    [90m    at endReadableNT (node:internal/streams/readable:1358:12)[39m
+    [90m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m {
+      stringValue: [32m`"{ type: 'String', default: 'Griger' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'string'[39m,
+      value: { type: [32m'String'[39m, default: [32m'Griger'[39m },
+      path: [32m'firstName'[39m,
+      reason: [1mnull[22m,
+      valueType: [32m'Object'[39m
+    },
+    lastName: CastError: Cast to string failed for value "{ type: 'String', default: 'Ratia' }" (type Object) at path "lastName"
+        at SchemaString.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/string.js:603:11[90m)[39m
+        at SchemaString.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>)
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3231:15
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:41:5
+        at new Promise (<anonymous>)
+        at promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:40:10[90m)[39m
+        at Mongoose._promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/index.js:1262:10[90m)[39m
+        at Function.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3162:23[90m)[39m
+        at UsersControllers.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/controllers/users.js:21:37[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/router.js:50:20
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:144:13[90m)[39m
+        at Route.dispatch [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:114:3[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:284:15
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at Function.handle [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:175:3[90m)[39m
+        at router [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:47:12[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at urlencodedParser [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/types/urlencoded.js:82:7[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/read.js:137:5
+    [90m    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)[39m
+        at invokeCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:231:16[90m)[39m
+        at done [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:220:7[90m)[39m
+        at IncomingMessage.onEnd [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:280:7[90m)[39m
+    [90m    at IncomingMessage.emit (node:events:525:35)[39m
+    [90m    at IncomingMessage.emit (node:domain:489:12)[39m
+    [90m    at endReadableNT (node:internal/streams/readable:1358:12)[39m
+    [90m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m {
+      stringValue: [32m`"{ type: 'String', default: 'Ratia' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'string'[39m,
+      value: { type: [32m'String'[39m, default: [32m'Ratia'[39m },
+      path: [32m'lastName'[39m,
+      reason: [1mnull[22m,
+      valueType: [32m'Object'[39m
+    },
+    cedula: CastError: Cast to Number failed for value "{ type: 'Number', default: '23684995' }" (type Object) at path "cedula"
+        at SchemaNumber.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/number.js:378:11[90m)[39m
+        at SchemaNumber.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>)
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3231:15
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:41:5
+        at new Promise (<anonymous>)
+        at promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:40:10[90m)[39m
+        at Mongoose._promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/index.js:1262:10[90m)[39m
+        at Function.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3162:23[90m)[39m
+        at UsersControllers.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/controllers/users.js:21:37[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/router.js:50:20
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:144:13[90m)[39m
+        at Route.dispatch [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:114:3[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:284:15
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at Function.handle [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:175:3[90m)[39m
+        at router [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:47:12[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at urlencodedParser [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/types/urlencoded.js:82:7[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/read.js:137:5
+    [90m    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)[39m
+        at invokeCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:231:16[90m)[39m
+        at done [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:220:7[90m)[39m
+        at IncomingMessage.onEnd [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:280:7[90m)[39m
+    [90m    at IncomingMessage.emit (node:events:525:35)[39m
+    [90m    at IncomingMessage.emit (node:domain:489:12)[39m
+    [90m    at endReadableNT (node:internal/streams/readable:1358:12)[39m
+    [90m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m {
+      stringValue: [32m`"{ type: 'Number', default: '23684995' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'Number'[39m,
+      value: { type: [32m'Number'[39m, default: [32m'23684995'[39m },
+      path: [32m'cedula'[39m,
+      reason: AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+      
+        assert.ok(!isNaN(val))
+      
+          at castNumber [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/cast/number.js:27:10[90m)[39m
+          at SchemaNumber.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/number.js:376:12[90m)[39m
+          at SchemaNumber.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+          at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+          at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+          at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+          at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+          at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+          at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+          at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+          at Array.forEach (<anonymous>)
+          at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3231:15
+          at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:41:5
+          at new Promise (<anonymous>)
+          at promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:40:10[90m)[39m
+          at Mongoose._promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/index.js:1262:10[90m)[39m
+          at Function.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3162:23[90m)[39m
+          at UsersControllers.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/controllers/users.js:21:37[90m)[39m
+          at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/router.js:50:20
+          at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+          at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:144:13[90m)[39m
+          at Route.dispatch [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:114:3[90m)[39m
+          at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+          at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:284:15
+          at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+          at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+          at Function.handle [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:175:3[90m)[39m
+          at router [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:47:12[90m)[39m
+          at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+          at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+          at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+          at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+          at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+          at urlencodedParser [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/types/urlencoded.js:82:7[90m)[39m
+          at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+          at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+          at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+          at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+          at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+          at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/read.js:137:5
+      [90m    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)[39m
+          at invokeCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:231:16[90m)[39m
+          at done [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:220:7[90m)[39m
+          at IncomingMessage.onEnd [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:280:7[90m)[39m
+      [90m    at IncomingMessage.emit (node:events:525:35)[39m
+      [90m    at IncomingMessage.emit (node:domain:489:12)[39m
+      [90m    at endReadableNT (node:internal/streams/readable:1358:12)[39m
+      [90m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m {
+        generatedMessage: [33mtrue[39m,
+        code: [32m'ERR_ASSERTION'[39m,
+        actual: [33mfalse[39m,
+        expected: [33mtrue[39m,
+        operator: [32m'=='[39m
+      },
+      valueType: [32m'Object'[39m
+    },
+    phone: CastError: Cast to string failed for value "{ type: 'String', default: '+584161913347' }" (type Object) at path "phone"
+        at SchemaString.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/string.js:603:11[90m)[39m
+        at SchemaString.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>)
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3231:15
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:41:5
+        at new Promise (<anonymous>)
+        at promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:40:10[90m)[39m
+        at Mongoose._promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/index.js:1262:10[90m)[39m
+        at Function.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3162:23[90m)[39m
+        at UsersControllers.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/controllers/users.js:21:37[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/router.js:50:20
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:144:13[90m)[39m
+        at Route.dispatch [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:114:3[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:284:15
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at Function.handle [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:175:3[90m)[39m
+        at router [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:47:12[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at urlencodedParser [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/types/urlencoded.js:82:7[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/read.js:137:5
+    [90m    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)[39m
+        at invokeCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:231:16[90m)[39m
+        at done [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:220:7[90m)[39m
+        at IncomingMessage.onEnd [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:280:7[90m)[39m
+    [90m    at IncomingMessage.emit (node:events:525:35)[39m
+    [90m    at IncomingMessage.emit (node:domain:489:12)[39m
+    [90m    at endReadableNT (node:internal/streams/readable:1358:12)[39m
+    [90m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m {
+      stringValue: [32m`"{ type: 'String', default: '+584161913347' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'string'[39m,
+      value: { type: [32m'String'[39m, default: [32m'+584161913347'[39m },
+      path: [32m'phone'[39m,
+      reason: [1mnull[22m,
+      valueType: [32m'Object'[39m
+    },
+    deleted: CastError: Cast to Boolean failed for value "{ type: 'Boolean', default: false }" (type Object) at path "deleted" because of "CastError"
+        at SchemaBoolean.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/boolean.js:209:11[90m)[39m
+        at SchemaBoolean.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>)
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3231:15
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:41:5
+        at new Promise (<anonymous>)
+        at promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:40:10[90m)[39m
+        at Mongoose._promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/index.js:1262:10[90m)[39m
+        at Function.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3162:23[90m)[39m
+        at UsersControllers.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/controllers/users.js:21:37[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/router.js:50:20
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:144:13[90m)[39m
+        at Route.dispatch [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:114:3[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:284:15
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at Function.handle [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:175:3[90m)[39m
+        at router [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:47:12[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at urlencodedParser [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/types/urlencoded.js:82:7[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/read.js:137:5
+    [90m    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)[39m
+        at invokeCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:231:16[90m)[39m
+        at done [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:220:7[90m)[39m
+        at IncomingMessage.onEnd [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:280:7[90m)[39m
+    [90m    at IncomingMessage.emit (node:events:525:35)[39m
+    [90m    at IncomingMessage.emit (node:domain:489:12)[39m
+    [90m    at endReadableNT (node:internal/streams/readable:1358:12)[39m
+    [90m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m {
+      stringValue: [32m`"{ type: 'Boolean', default: false }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'Boolean'[39m,
+      value: { type: [32m'Boolean'[39m, default: [33mfalse[39m },
+      path: [32m'deleted'[39m,
+      reason: CastError: Cast to boolean failed for value "{ type: 'Boolean', default: false }" (type Object) at path "undefined"
+          at castBoolean [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/cast/boolean.js:28:9[90m)[39m
+          at SchemaBoolean.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/boolean.js:207:12[90m)[39m
+          at SchemaBoolean.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+          at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+          at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+          at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+          at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+          at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+          at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+          at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+          at Array.forEach (<anonymous>)
+          at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3231:15
+          at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:41:5
+          at new Promise (<anonymous>)
+          at promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:40:10[90m)[39m
+          at Mongoose._promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/index.js:1262:10[90m)[39m
+          at Function.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3162:23[90m)[39m
+          at UsersControllers.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/controllers/users.js:21:37[90m)[39m
+          at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/router.js:50:20
+          at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+          at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:144:13[90m)[39m
+          at Route.dispatch [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:114:3[90m)[39m
+          at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+          at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:284:15
+          at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+          at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+          at Function.handle [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:175:3[90m)[39m
+          at router [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:47:12[90m)[39m
+          at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+          at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+          at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+          at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+          at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+          at urlencodedParser [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/types/urlencoded.js:82:7[90m)[39m
+          at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+          at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+          at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+          at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+          at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+          at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/read.js:137:5
+      [90m    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)[39m
+          at invokeCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:231:16[90m)[39m
+          at done [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:220:7[90m)[39m
+          at IncomingMessage.onEnd [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:280:7[90m)[39m
+      [90m    at IncomingMessage.emit (node:events:525:35)[39m
+      [90m    at IncomingMessage.emit (node:domain:489:12)[39m
+      [90m    at endReadableNT (node:internal/streams/readable:1358:12)[39m
+      [90m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m {
+        stringValue: [32m`"{ type: 'Boolean', default: false }"`[39m,
+        messageFormat: [90mundefined[39m,
+        kind: [32m'boolean'[39m,
+        value: { type: [32m'Boolean'[39m, default: [33mfalse[39m },
+        path: [90mundefined[39m,
+        reason: [90mundefined[39m,
+        valueType: [32m'Object'[39m
+      },
+      valueType: [32m'Object'[39m
+    },
+    userType: CastError: Cast to string failed for value "{ type: 'String', default: 'userTemp' }" (type Object) at path "userType"
+        at SchemaString.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/string.js:603:11[90m)[39m
+        at SchemaString.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>)
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3231:15
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:41:5
+        at new Promise (<anonymous>)
+        at promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:40:10[90m)[39m
+        at Mongoose._promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/index.js:1262:10[90m)[39m
+        at Function.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3162:23[90m)[39m
+        at UsersControllers.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/controllers/users.js:21:37[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/router.js:50:20
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:144:13[90m)[39m
+        at Route.dispatch [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:114:3[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:284:15
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at Function.handle [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:175:3[90m)[39m
+        at router [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:47:12[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at urlencodedParser [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/types/urlencoded.js:82:7[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/read.js:137:5
+    [90m    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)[39m
+        at invokeCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:231:16[90m)[39m
+        at done [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:220:7[90m)[39m
+        at IncomingMessage.onEnd [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:280:7[90m)[39m
+    [90m    at IncomingMessage.emit (node:events:525:35)[39m
+    [90m    at IncomingMessage.emit (node:domain:489:12)[39m
+    [90m    at endReadableNT (node:internal/streams/readable:1358:12)[39m
+    [90m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m {
+      stringValue: [32m`"{ type: 'String', default: 'userTemp' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'string'[39m,
+      value: { type: [32m'String'[39m, default: [32m'userTemp'[39m },
+      path: [32m'userType'[39m,
+      reason: [1mnull[22m,
+      valueType: [32m'Object'[39m
+    },
+    userName: CastError: Cast to string failed for value "{ type: 'String', default: 'grigerluis' }" (type Object) at path "userName"
+        at SchemaString.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/string.js:603:11[90m)[39m
+        at SchemaString.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>)
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3231:15
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:41:5
+        at new Promise (<anonymous>)
+        at promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:40:10[90m)[39m
+        at Mongoose._promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/index.js:1262:10[90m)[39m
+        at Function.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3162:23[90m)[39m
+        at UsersControllers.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/controllers/users.js:21:37[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/router.js:50:20
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:144:13[90m)[39m
+        at Route.dispatch [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:114:3[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:284:15
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at Function.handle [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:175:3[90m)[39m
+        at router [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:47:12[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at urlencodedParser [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/types/urlencoded.js:82:7[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/read.js:137:5
+    [90m    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)[39m
+        at invokeCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:231:16[90m)[39m
+        at done [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:220:7[90m)[39m
+        at IncomingMessage.onEnd [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:280:7[90m)[39m
+    [90m    at IncomingMessage.emit (node:events:525:35)[39m
+    [90m    at IncomingMessage.emit (node:domain:489:12)[39m
+    [90m    at endReadableNT (node:internal/streams/readable:1358:12)[39m
+    [90m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m {
+      stringValue: [32m`"{ type: 'String', default: 'grigerluis' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'string'[39m,
+      value: { type: [32m'String'[39m, default: [32m'grigerluis'[39m },
+      path: [32m'userName'[39m,
+      reason: [1mnull[22m,
+      valueType: [32m'Object'[39m
+    },
+    email: CastError: Cast to string failed for value "{ type: 'String', default: 'grigerratia@gmail.com' }" (type Object) at path "email"
+        at SchemaString.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/string.js:603:11[90m)[39m
+        at SchemaString.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>)
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3231:15
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:41:5
+        at new Promise (<anonymous>)
+        at promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:40:10[90m)[39m
+        at Mongoose._promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/index.js:1262:10[90m)[39m
+        at Function.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3162:23[90m)[39m
+        at UsersControllers.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/controllers/users.js:21:37[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/router.js:50:20
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:144:13[90m)[39m
+        at Route.dispatch [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:114:3[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:284:15
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at Function.handle [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:175:3[90m)[39m
+        at router [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:47:12[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at urlencodedParser [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/types/urlencoded.js:82:7[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/read.js:137:5
+    [90m    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)[39m
+        at invokeCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:231:16[90m)[39m
+        at done [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:220:7[90m)[39m
+        at IncomingMessage.onEnd [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:280:7[90m)[39m
+    [90m    at IncomingMessage.emit (node:events:525:35)[39m
+    [90m    at IncomingMessage.emit (node:domain:489:12)[39m
+    [90m    at endReadableNT (node:internal/streams/readable:1358:12)[39m
+    [90m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m {
+      stringValue: [32m`"{ type: 'String', default: 'grigerratia@gmail.com' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'string'[39m,
+      value: { type: [32m'String'[39m, default: [32m'grigerratia@gmail.com'[39m },
+      path: [32m'email'[39m,
+      reason: [1mnull[22m,
+      valueType: [32m'Object'[39m
+    },
+    password: CastError: Cast to string failed for value "{ type: 'String', default: '' }" (type Object) at path "password"
+        at SchemaString.cast [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schema/string.js:603:11[90m)[39m
+        at SchemaString.SchemaType.applySetters [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/schematype.js:1201:12[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1421:22[90m)[39m
+        at model.$set [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:1146:16[90m)[39m
+        at model.Document [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/document.js:166:12[90m)[39m
+        at model.Model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:122:12[90m)[39m
+        at new model [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:5092:15[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3197:22
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3232:7
+        at Array.forEach (<anonymous>)
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3231:15
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:41:5
+        at new Promise (<anonymous>)
+        at promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/helpers/promiseOrCallback.js:40:10[90m)[39m
+        at Mongoose._promiseOrCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/index.js:1262:10[90m)[39m
+        at Function.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mmongoose[24m/lib/model.js:3162:23[90m)[39m
+        at UsersControllers.create [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/controllers/users.js:21:37[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39msrc/router.js:50:20
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:144:13[90m)[39m
+        at Route.dispatch [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/route.js:114:3[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:284:15
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at Function.handle [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:175:3[90m)[39m
+        at router [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:47:12[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at urlencodedParser [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/types/urlencoded.js:82:7[90m)[39m
+        at Layer.handle [as handle_request] [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/layer.js:95:5[90m)[39m
+        at trim_prefix [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:328:13[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:286:9
+        at Function.process_params [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:346:12[90m)[39m
+        at next [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mexpress[24m/lib/router/index.js:280:10[90m)[39m
+        at [90m/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mbody-parser[24m/lib/read.js:137:5
+    [90m    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)[39m
+        at invokeCallback [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:231:16[90m)[39m
+        at done [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:220:7[90m)[39m
+        at IncomingMessage.onEnd [90m(/home/grigerlord/cesticom/bootcamp/condominium/api/[39mnode_modules/[4mraw-body[24m/index.js:280:7[90m)[39m
+    [90m    at IncomingMessage.emit (node:events:525:35)[39m
+    [90m    at IncomingMessage.emit (node:domain:489:12)[39m
+    [90m    at endReadableNT (node:internal/streams/readable:1358:12)[39m
+    [90m    at processTicksAndRejections (node:internal/process/task_queues:83:21)[39m {
+      stringValue: [32m`"{ type: 'String', default: '' }"`[39m,
+      messageFormat: [90mundefined[39m,
+      kind: [32m'string'[39m,
+      value: { type: [32m'String'[39m, default: [32m''[39m },
+      path: [32m'password'[39m,
+      reason: [1mnull[22m,
+      valueType: [32m'Object'[39m
+    }
+  },
+  _message: [32m'users validation failed'[39m
+}
+[33m[nodemon] files triggering change check: typescript[39m
+[33m[nodemon] changes after filters (before/after): 1/0[39m
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[33m[nodemon] files triggering change check: src/models/users.js[39m
+[33m[nodemon] matched rule: **/*.*[39m
+[33m[nodemon] changes after filters (before/after): 1/1[39m
+[32m[nodemon] restarting due to changes...[39m
+[33m[nodemon] src/models/users.js[39m
+
+[32m[nodemon] starting `babel-node src/index.js`[39m
+[33m[nodemon] spawning[39m
+[33m[nodemon] child pid: 6619[39m
+app listening on port 9000
+Connected successfully to the database
+[33m[nodemon] files triggering change check: src/models/users.js[39m
+[33m[nodemon] matched rule: **/*.*[39m
+[33m[nodemon] changes after filters (before/after): 1/1[39m
+[32m[nodemon] restarting due to changes...[39m
+[33m[nodemon] src/models/users.js[39m
+
+[32m[nodemon] starting `babel-node src/index.js`[39m
+[33m[nodemon] spawning[39m
+[33m[nodemon] child pid: 6751[39m
+app listening on port 9000
+Connected successfully to the database
+{
+  firstName: [32m'Griger'[39m,
+  lastName: [32m'Ratia'[39m,
+  cedula: [32m'23684995'[39m,
+  phone: [32m'+584161913347'[39m,
+  deleted: [33mfalse[39m,
+  address: { street: [32m'123 street'[39m, city: [32m'Cumana'[39m, state: [32m'Su.'[39m, zip: [32m'12345'[39m },
+  userType: [32m'userTemp'[39m,
+  userName: [32m'grigerluis'[39m,
+  email: [32m'grigerratia@gmail.com'[39m,
+  password: [32m'123abc+'[39m
+}
+{
+  firstName: [32m'Buddy'[39m,
+  lastName: [32m'Ratia'[39m,
+  cedula: [32m'40687944'[39m,
+  phone: [32m'+584161913347'[39m,
+  deleted: [33mfalse[39m,
+  address: { street: [32m'123 street'[39m, city: [32m'Cumana'[39m, state: [32m'Su.'[39m, zip: [32m'12345'[39m },
+  userType: [32m'admin'[39m,
+  userName: [32m'buddyratia'[39m,
+  email: [32m'buddyratia@gmail.com'[39m,
+  password: [32m'123def+'[39m
+}
+[33m[nodemon] fi

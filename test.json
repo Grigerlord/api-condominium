@@ -1,0 +1,144 @@
+{
+    "msg": "Success",
+    "users": [
+      {
+        "address": {
+          "street": "123 V street",
+          "city": "las vegas",
+          "state": "NV.",
+          "zip": 123988
+        },
+        "_id": "63c9dcc0025a5e8c9207241a",
+        "firstName": "Griger",
+        "lastName": "Ratia",
+        "cedula": 23684995,
+        "phone": "+584161913347",
+        "deleted": false,
+        "adsress": {
+          "street": {
+            "default": "123 V street"
+          },
+          "city": {
+            "default": "las vegas"
+          },
+          "state": {
+            "default": "NV."
+          },
+          "zip": {
+            "default": 123988
+          }
+        },
+        "userType": "userTemp",
+        "userName": "grigerluis",
+        "email": "grigerratia@gmail.com",
+        "password": "123abc+",
+        "createdAt": "",
+        "updatedAt": "",
+        "__v": 0
+      },
+      {
+        "address": {
+          "street": "123 V street",
+          "city": "las vegas",
+          "state": "NV.",
+          "zip": 123988
+        },
+        "_id": "63c9dd0f025a5e8c9207241c",
+        "firstName": "Buddy",
+        "lastName": "Ratia",
+        "cedula": 40687944,
+        "phone": "+584161913347",
+        "deleted": false,
+        "adsress": {
+          "street": {
+            "default": "123 V street"
+          },
+          "city": {
+            "default": "las vegas"
+          },
+          "state": {
+            "default": "NV."
+          },
+          "zip": {
+            "default": 123988
+          }
+        },
+        "userType": "admin",
+        "userName": "buddyratia",
+        "email": "buddyratia@gmail.com",
+        "password": "123def+",
+        "createdAt": "",
+        "updatedAt": "",
+        "__v": 0
+      },
+      {
+        "address": {
+          "street": "123 V street",
+          "city": "las vegas",
+          "state": "NV.",
+          "zip": 123988
+        },
+        "_id": "63c9de2d6440f96ccce9169b",
+        "firstName": "Jose",
+        "lastName": "Fariñas",
+        "cedula": 20859744,
+        "phone": "+584248597412",
+        "deleted": false,
+        "adsress": {
+          "street": "123 V street",
+          "city": "las vegas",
+          "state": "NV.",
+          "zip": 123988
+        },
+        "userType": "arrendatary",
+        "userName": "jfari",
+        "email": "jfari@gmail.com",
+        "password": "123ghi+",
+        "createdAt": "",
+        "updatedAt": "",
+        "__v": 0
+      },
+      {
+        "_id": "63c9df01d60a01dd69c61af8",
+        "firstName": "Ernesto",
+        "lastName": "Garcia",
+        "cedula": 26859674,
+        "phone": "+584123561645",
+        "deleted": false,
+        "address": {
+          "street": "789 street",
+          "city": "EL Tacal",
+          "state": "SU",
+          "zip": "111213"
+        },
+        "userType": "inquilino",
+        "userName": "garciae",
+        "email": "garciae@gmail.com",
+        "password": "123jkl+",
+        "createdAt": "",
+        "updatedAt": "",
+        "__v": 0
+      },
+      {
+        "_id": "63cc5a09187872b1010ff3d5",
+        "firstName": "Felix",
+        "lastName": "Betancourt",
+        "cedula": 23684995,
+        "phone": "+584168031115",
+        "deleted": false,
+        "address": {
+          "street": "123 V street",
+          "city": "las vegas",
+          "state": "NV.",
+          "zip": 123988
+        },
+        "userType": "admin",
+        "userName": "felixya",
+        "email": "felixya@gmail.com",
+        "password": "123lmn+",
+        "createdAt": "",
+        "updatedAt": "",
+        "__v": 0
+      }
+    ]
+  }
